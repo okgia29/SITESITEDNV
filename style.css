@@ -35,7 +35,6 @@ ul {
     padding: 8px;
 }
 @keyframes scroll {
-    0% {transform: translateX(0%);}
     50% {transform: translateX(50%);}
     0% {transform: translateX(0%);}
     
@@ -57,4 +56,19 @@ div.gallery img {
 div.desc {
   padding: 20px left;
   text-align: center;
+}
+.infobox {
+  border-color: yellow;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgba(11, 9, 24, 0.77);
+  clear: right;
+  float: right;
+  margin: 0 0 18px 18px;
+  width: 270px;
+}
+.infotitle {
+  margin: 10px;
+  font-size: larger;
 }
