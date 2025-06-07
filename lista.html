@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listaaa</title>
+</head>
+
+<body>
+
+
+    <div class=bolsonaro22>
+        <br>
+        <input id="input" placeholder="Digite um item">
+        <br>
+        <button id="botao" onclick="nomeDaFuncao()">
+            adicionar
+        </button>
+        <div id="lista">
+
+        </div>
+</body>
+
+</html>
+
+</div>
+<style>
+    body {
+        background-color: lightgreen;
+        font-size: 30px;
+    }
+
+    .bolsonaro22 {
+        display: content-block;
+        margin: auto;
+        width: 70vw;
+
+        min-height: 800px;
+        border: solid red 2px;
+
+        overflow: hidden;
+    }
+
+    #input {
+        font-size: 40px;
+        width: 54vw;
+        height: 70hw;
+    }
+
+    button {
+        font-size: 25px;
+    }
+
+    input[type="checkbox"] {
+        width: 100px;
+        color: red;
+    }
+
+    div div:has(input:checked) {
+        border: none;
+
+        outline: 2px solid darkgreen;
+        padding: 2px;
+        text-decoration: line-through;
+    }
+</style>
+<script>function nomeDaFuncao() {
+        let input = document.getElementById("input")
+        let lista = document.getElementById("lista")
+
+        let div = document.createElement("div")
+        let texto = document.createTextNode(input.value)
+        let check = document.createElement("input")
+        check.type = "checkbox"
+        check.value = input.value
+
+        div.appendChild(check)
+        div.appendChild(texto)
+
+        lista.appendChild(div)
+        input.value = ""
+    }</script>
